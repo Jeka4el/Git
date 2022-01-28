@@ -7,32 +7,64 @@
 6. git remote add origin ... (ссылка)
 7. git push origin master
 
+Universal
 
 
-git init . - создать репозиторий;
-gir add * - добавить все файлы (Staged);
-git rm --cached ... - перестать следить за файлом ... ;
-git status - проверить статус;
-git commit -m "коментарий" - залить в локальный репозиторий (Copy in Local Repository);
+
+git add * - добавить все файлы (Staged);
 git log - показаь все commit(ы) + -1 (показать последний) + -p (подробно);
-git checkout -- filename - отменить действие;
-git diff --staged - показывает что будет записано при commit(е);
-ll - показать что содержитьсяв дер-и;
-.gitignore - вайл в котором прописваем за какими файлами/директориями перестать следить;
-git clone https... - клонировать репозиторий;
+git commit -m "коментарий" - залить в репозиторий ;
+git status - проверить статус;
 git push origin - залить на репозиторий;
-git remote -v - показать к какой ссылке привзан прект; 
-git remote set-url origin http... - привязать к директории ... ;
-git branch - показать branch(и);
+
+
+
 git branch ... - создать branch с названием ... ;
-git branch -d ... - удалить локаьный branch с названием ... ;
-git push origin --delete ... - удалить branch ... с GitHub;
+git branch -d ... - удалить branch с названием ... ;
+git branch - показать branch(и);
+
+git checkout -- filename - отменить действие;
 git checkout ... - перейти в branch ...;
 git checkout - b ... - создать и перейти в branch ...;
-git merge ... - обьеденить ветку ... с веткой master;
-qq - выйти из проги с логом;
 git checkout ..commit.. - перейти на commit подназванием ..commit..;
 git checkout master - вернуться в master ;
+
 git commit --amend - редактиовать последний commit;
 git reset --hard HEAD~  - удалить один commit с файлами (~2 удалить);
 git reset --soft HEAD~ - стереть логи commit(ов) (~2 стереть 2);
+git diff --staged - показывает что будет записано при commit(е);
+git merge ... - обьеденить ветку ... с веткой master;
+qq - выйти из проги с логом;
+
+
+ll - показать что содержитьсяв дер-и;
+
+.gitignore - вайл в котором прописваем за какими файлами/директориями перестать следить;
+
+git remote set-url origin http... - привязать к директории ... ;
+
+
+git rm --cached ... - перестать следить за файлом ... ;
+
+
+
+Local
+
+git init . - создать репозиторий;
+
+
+
+GitHub
+
+
+git clone https... - клонировать репозиторий;
+git push origin --delete ... - удалить branch ... с GitHub;
+
+
+git remote -v - показать к какой ссылке привзан прект; 
+
+
+
+
+
+
