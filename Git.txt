@@ -14,6 +14,7 @@ git add * - добавить все файлы;
 git checkout -- filename - отменить действие;
 git rm --cached ... - перестать следить за файлом ... ;
 git commit -m "коментарий" - сделать commit ;
+git diff --staged - показывает что будет записано при commit(е);
 git log - показаь все commit(ы) + -1 (показать последний) + -p (подробно);
 
 
@@ -26,31 +27,12 @@ git push origin - залить на репозиторий;
 
 Edit
 git commit --amend - редактиовать последний commit;
-git checkout ..commit.. - перейти на commit подназванием ..commit..;
-
+git checkout ..commit.. - перейти на commit подназванием ..commit..(временно);
+git checkout master - вернуться на последний коммит (после переключения на предыдущий);
+git reset --hard HEAD~  - вернуться на один commit, commit будет полностью удален файлы и логи (~2 удалить 2);
+git reset --soft HEAD~ - стереть логи commit(ов) (~2 стереть 2);
 
 
 .gitignore - вайл в котором прописваем за какими файлами/директориями перестать следить;
 
-
-
-git reset --hard HEAD~  - удалить один commit с файлами (~2 удалить);
-git reset --soft HEAD~ - стереть логи commit(ов) (~2 стереть 2);
-git diff --staged - показывает что будет записано при commit(е);
 qq - выйти из проги с логом;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
