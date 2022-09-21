@@ -18,20 +18,31 @@ git diff --staged - показывает что будет записано пр
 git log - показаь все commit(ы) + -1 (показать последний) + -p (подробно);
 
 
-Remote repository
+Remote repository:
 git remote -v  - покажет к какой ссылке привязан репозиторий;
 git remote set-url origin ... - приаязать к удаленному репозиторию https://... . 
 git push origin --delete ... - удалить branch ... с GitHub;
 git push origin - залить на репозиторий;
+git pull - обновить репозиторий; 
 
 
-Edit
+Edit:
 git commit --amend - редактиовать последний commit;
-git checkout ..commit.. - перейти на commit подназванием ..commit..(временно);
+git checkout ..hashcommit.. - перейти на commit подназванием ..hashcommit..(временно);
 git checkout master - вернуться на последний коммит (после переключения на предыдущий);
 git reset --hard HEAD~  - вернуться на один commit, commit будет полностью удален файлы и логи (~2 удалить 2);
 git reset --soft HEAD~ - стереть логи commit(ов) (~2 стереть 2);
 
+
+Tags:
+git tag - показывает какие таги сейчас есть;
+git tag v1.0.0 - создаст закладку v1.0.0 в текущем commit(е);
+git push origin tag v1.0.0 - отправит tag на удаленный репозиторий;
+git tag -d v1.0.0 - удалит закладку v1.0.0; 
+git push origin --delete v1.0.0 - удалить tag из репозитория;
+git checkout v1.0.0 - переключиться на commit с tag v1.0.0;
+git tag -a v1.0.1 ..hashcommit.. - добавить tag коммиту с хешом ..hashcommit..
+git push origin --tags - запушить все таги. 
 
 .gitignore - вайл в котором прописваем за какими файлами/директориями перестать следить;
 
